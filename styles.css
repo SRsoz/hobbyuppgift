@@ -1,0 +1,141 @@
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: black;
+  background-color: #ffebcd;
+  background-image: linear-gradient(180deg, #deb887, #e9967a);
+}
+table,
+th,
+td {
+  border: 2px solid;
+}
+header {
+  background-color: #faebd7;
+}
+nav {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  padding: 10px 10px;
+  color: black;
+  border: none;
+  border-radius: 15px;
+}
+
+p {
+  font-family: "open sans";
+  font-size: 20px;
+  font-style: normal;
+}
+body {
+  margin: auto 14rem;
+  padding: auto 14rem;
+  background-color: #faebd7;
+}
+#kokbok {
+  margin: 0 auto;
+  display: flex;
+  justify-items: center;
+}
+#länk {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+ul {
+  font-family: "open sans";
+  font-size: 16px;
+  font-weight: bold;
+  color: #696969;
+}
+main {
+  background-color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 8fr);
+  grid-template-rows: auto;
+  padding: 10px;
+  justify-content: center;
+  gap: 1vh;
+}
+
+.video1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 1;
+}
+.video2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 1;
+}
+.video3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 2;
+}
+.video4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 2;
+}
+
+.video1,
+.video2,
+.video3,
+.video4 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.rounded-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  background-image: linear-gradient(
+    180deg,
+    #deb887,
+    #e9967a
+  );
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    body {
+        margin: 3px;
+        padding: 3px;
+        background-color: #faebd7;
+      }
+      nav {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: oblique;
+        text-align: center;
+        padding: 2px 2px;
+        color: black;
+        border: none;
+        border-radius: 15px;
+      }
+      
+}
